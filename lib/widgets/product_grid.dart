@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:udamy111/widgets/procut_item.dart';
 
-import '../models/product.dart';
+import '../providers/product.dart';
 import '../providers/products.dart';
 
 class ProductsGrid extends StatelessWidget {
@@ -28,10 +28,14 @@ class ProductsGrid extends StatelessWidget {
       ),
       itemCount: products.length,
       // Debugprint("hhhh"+ loadedProducts[i].id,);
-      itemBuilder: (ctx, i) => ProductItem(
-        products[i].id,
-        products[i].title,
-        products[i].imageUrl,
+      itemBuilder: (ctx, i) => ChangeNotifierProvider(
+        create: (c) => products[i],
+        // create: (BuildContext context) {  },
+        child: ProductItem(
+            // products[i].id,
+            // products[i].title,
+            // products[i].imageUrl,
+            ),
       ),
     );
   }
