@@ -41,6 +41,7 @@ class _ProdcutDtailsScreenState extends State<ProdcutDtailsScreen> {
           Container(
             child: Text(loadedProduct.description),
           ),
+          //
         ],
       ),
     );
