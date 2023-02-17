@@ -21,7 +21,7 @@ class _ProdcutOverviewScreenState extends State<ProdcutOverviewScreen> {
     // print('hello------' + loadedProducts.toString());
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: Text('uudamy111')),
+        title: Center(child: Text('uudamy11111111')),
       ),
       body: ProductsGrid(),
     );

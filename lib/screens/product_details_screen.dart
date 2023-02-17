@@ -24,7 +24,7 @@ class _ProdcutDtailsScreenState extends State<ProdcutDtailsScreen> {
         /*.items
         .firstWhere((prod) => prod.id == productId);*/
         .findById(productId);
-    print('loadedxxxxxxxxxxxxxxxxxxxxxxx____' + productId);
+    print('loadedxxxxxxxxxx____' + productId);
     print('loadedProdcutinformation____' + loadedProduct.id);
     return Scaffold(
       appBar: AppBar(
